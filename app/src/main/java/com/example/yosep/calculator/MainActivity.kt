@@ -24,13 +24,15 @@ class MainActivity : AppCompatActivity() {
 
     fun showValues(v : View){
 
+        if (display.text.equals("0")) display.text = ""
+
         when(v.id){
 
             R.id.button0 -> {
                 display.text = display.text.toString() + "0"
             }
             R.id.button1 -> {
-                display.text = display.text.toString() + "1"
+               display.text = display.text.toString() + "1"
             }
             R.id.button2 -> {
                 display.text = display.text.toString() + "2"
@@ -171,9 +173,10 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+
     fun delete(v : View){
 
-        display.text = ""
+        display.text = "0"
         acumulado = 0.0
         progresivo = 0.0
 
@@ -220,28 +223,28 @@ class MainActivity : AppCompatActivity() {
 
             "+"->{
 
-                totalHEX = resultadoHEX.toInt() + display.text.toString().toInt()
+                totalHEX = (resultadoHEX.toInt() + java.lang.Long.parseLong(display.text.toString(), 16)).toInt()
                 display.setText(java.lang.Integer.toHexString(totalHEX))
 
             }
 
             "-"->{
 
-                totalHEX = resultadoHEX.toInt() + display.text.toString().toInt()
+                totalHEX = resultadoHEX.toInt() - java.lang.Long.parseLong(display.text.toString(), 16).toInt()
                 display.setText(java.lang.Integer.toHexString(totalHEX))
 
             }
 
             "*"->{
 
-                totalHEX = resultadoHEX.toInt() + display.text.toString().toInt()
+                totalHEX = resultadoHEX.toInt() * java.lang.Long.parseLong(display.text.toString(), 16).toInt()
                 display.setText(java.lang.Integer.toHexString(totalHEX))
 
             }
 
             "/"->{
 
-                totalHEX = resultadoHEX.toInt() + display.text.toString().toInt()
+                totalHEX = resultadoHEX.toInt() / java.lang.Long.parseLong(display.text.toString(), 16).toInt()
                 display.setText(java.lang.Integer.toHexString(totalHEX))
 
             }
