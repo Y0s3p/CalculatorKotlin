@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="display">""</string>
+    <string name="Button1">1</string>
+    <string name="Button2">2</string>
+    <string name="Button3">3</string>
+    <string name="Button4">4</string>
+    <string name="Button5">5</string>
+    <string name="Button6">6</string>
+    <string name="Button7">7</string>
+    <string name="Button8">8</string>
+    <string name="Button9">9</string>
+    <string name="Button0">0</string>
+    <string name="ButtonA">A</string>
+    <string name="ButtonB">B</string>
+    <string name="ButtonC">C</string>
+    <string name="ButtonD">D</string>
+    <string name="ButtonE">E</string>
+    <string name="ButtonF">F</string>
+    <string name="ButtonDel">AC</string>
+    <string name="ButtonDot">.</string>
+    <string name="ButtonEqual">=</string>
+    <string name="ButtonMc">MC</string>
+    <string name="ButtonMs">MS</string>
+    <string name="ButtonMe">ME</string>
+    <string name="ButtonPlus">+</string>
+    <string name="ButtonMinus">-</string>
+    <string name="ButtonMultiplication">x</string>
+    <string name="ButtonDivision">%</string>
+</resources>
